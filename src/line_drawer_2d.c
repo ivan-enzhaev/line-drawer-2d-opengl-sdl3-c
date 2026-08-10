@@ -46,8 +46,6 @@ void LineDrawer2D_init(LineDrawer2D *self, GLuint shaderProgram, mat4 projViewMa
         // Uniforms
         self->uColorLocation = glGetUniformLocation(shaderProgram, "uColor");
         self->uMvpLocation = glGetUniformLocation(shaderProgram, "uMvpMatrix");
-
-        SDL_Log("LineDrawer2D -> uColor loc: %d, uMvp loc: %d", self->uColorLocation, self->uMvpLocation);
     }
 }
 
